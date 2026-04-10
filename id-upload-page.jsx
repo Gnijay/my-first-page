@@ -168,3 +168,4 @@ const IDUploadPage = () => {
 };
 
 export default IDUploadPage;
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
