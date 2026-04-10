@@ -166,6 +166,7 @@ const IDUploadPage = () => {
     </div>
   );
 };
+// 注意：如果你的组件名不是 IDUploadPage，要改成自己的组件名！
 
 export default IDUploadPage;
-ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+ReactDOM.createRoot(document.getElementById('root')).render(<IDUploadPage />);
