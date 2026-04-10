@@ -4,10 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>身份证上传页面</title>
-  <!-- 正确引用独立的 CSS 文件 -->
+  <!-- 引入独立的 CSS 文件 -->
   <link rel="stylesheet" href="./id-upload-page.css">
 
-  <!-- 引入 React/Babel 核心库（必须） -->
+  <!-- 引入 React/Babel CDN（浏览器能识别） -->
   <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
   <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
@@ -15,7 +15,7 @@
 <body>
   <div id="root"></div>
 
-  <!-- 正确引用独立的 JSX 文件，type 必须是 text/babel -->
+  <!-- 引用 JSX 文件，type 必须是 text/babel -->
   <script type="text/babel" src="./id-upload-page.jsx"></script>
 </body>
 </html>
