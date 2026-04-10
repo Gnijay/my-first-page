@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
-import './id-upload-page.css';
+// 删掉 import 语句（浏览器不认识 import，CSS 已经在 index.html 里引入了）
+// 直接用 React 全局变量（来自 index.html 里的 CDN）
+const { useState } = React;
 
 const IDUploadPage = () => {
   const [frontImage, setFrontImage] = useState(null);
@@ -12,6 +13,7 @@ const IDUploadPage = () => {
 
   return (
     <div className="id-upload-page">
+      {/* 这里保留你原来的所有页面结构代码，完全不动 */}
       {/* 状态栏 */}
       <div className="status-bar">
         <span className="time">14:43</span>
@@ -166,7 +168,6 @@ const IDUploadPage = () => {
     </div>
   );
 };
-// 注意：如果你的组件名不是 IDUploadPage，要改成自己的组件名！
 
-export default IDUploadPage;
+// 删掉 export 语句，新增渲染代码（浏览器能识别）
 ReactDOM.createRoot(document.getElementById('root')).render(<IDUploadPage />);
